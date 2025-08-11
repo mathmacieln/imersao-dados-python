@@ -127,6 +127,7 @@ with col_graf4:
             locations='residencia_iso3',
             color='usd',
             color_continuous_scale='rdylgn',
+            projection="natural earth",                           
             title='Salário médio de Cientista de Dados por país',
             labels={'usd': 'Salário médio (USD)', 'residencia_iso3': 'País'})
         grafico_paises.update_layout(title_x=0.1)
@@ -136,4 +137,5 @@ with col_graf4:
         
 # --- Tabela de Dados Detalhados ---
 st.subheader("Dados Detalhados")
+
 st.dataframe(df_filtrado)
